@@ -18,8 +18,9 @@ import createThing from "../services/createThing";
 const CreatorForm = () => {
   // UPDATE STATE TO HANDLE YOUR TYPE
   const [title, setTitle] = useState("");
+  const [body, setBody] = useState("");
   const [description, setDescription] = useState("");
-  
+  cons
   const [isLoading, setIsLoading] = useState(false);
   const { isOpen, onOpen, onClose } = useDisclosure();
   const [message, setMessage] = useState<string>("");
@@ -28,7 +29,9 @@ const CreatorForm = () => {
   const handleTitleChange = (event: { target: { value: any } }) => {
     setTitle(event.target.value);
   };
-
+  const handleBodyChange = (event: { target: { value: any } }) => {
+    setBody(event.target.value);
+  };
   const handleDescriptionChange = (event: { target: { value: any } }) => {
     setDescription(event.target.value);
   };
