@@ -8,8 +8,7 @@ interface CreateThingResponse {
 // UPDATE THIS TO MATCH YOUR TYPE
 interface CreateThingPayload {
   title: string,
-  body: markdown,
-  author: string
+  body: string
 }
 
 const createThing = (payload: CreateThingPayload) => {
