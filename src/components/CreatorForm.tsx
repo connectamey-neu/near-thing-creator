@@ -20,7 +20,6 @@ const CreatorForm = () => {
   const [title, setTitle] = useState("");
   const [body, setBody] = useState("");
   const [description, setDescription] = useState("");
-  cons
   const [isLoading, setIsLoading] = useState(false);
   const { isOpen, onOpen, onClose } = useDisclosure();
   const [message, setMessage] = useState<string>("");
