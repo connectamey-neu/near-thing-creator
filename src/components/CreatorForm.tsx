@@ -40,7 +40,7 @@ const CreatorForm = () => {
     // UPDATE OBJECT TO MATCH YOUR TYPE
     const response = await createThing({
       title,
-      description,
+      body,
     });
     if (response.error) {
       setMessage(response.error);
